@@ -1,0 +1,21 @@
+services:
+  postgres:
+    container_name: postgres-dav
+    image: postgres:14-alpine
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_DB=homework
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=Paroli123.
+    volumes:
+      - db:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - net
+
+volumes:
+  db:
+
+networks:
+  net:
