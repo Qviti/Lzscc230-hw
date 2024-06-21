@@ -1,4 +1,4 @@
-docker engine needed
-use docker-compose up -d
-run /back as maven project
-run /android (api ver 34)
+docker engine needed <br>
+use docker-compose up -d <br>
+run /back as maven project <br>
+run /android (api ver 34) <br>
